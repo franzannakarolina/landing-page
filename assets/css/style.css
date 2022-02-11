@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.main {
+  background-color: #1d2437;
+  background-image: url("../images/Rectangle38.png");
+}
+
+.container {
+  max-width: 1070px;
+  height: 600px;
+  margin: auto;
+  color: #fff;
+}
+
+header {
+  padding-top: 80px;
+}
+
+.heroArea {
+  display: flex;
+}
+
+.heroAre .leftsid h1 {
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 50px;
+  margin: 80px 0 20px 0;
+}
+
+.heroArea .leftsid {
+  flex: 1;
+}
+
+.heroArea .leftsid .subtitle {
+  font-size: 16px;
+  line-height: 33px;
+  color: #9999;
+  margin-bottom: 20px;
+}
+
+.heroArea .leftsid .form {
+  margin-bottom: 20px;
+}
+
+.heroArea .leftsid .form input {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: transparent;
+  height: 40px;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  width: 300px;
+  padding: 0 10px;
+  margin-left: 10px;
+}
+
+.heroArea .leftsid .form button {
+  height: 40px;
+  border: 0;
+  background-color: #0071b7;
+  color: #fff;
+  font-size: 14px;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.heroArea .leftsid .form button:hover {
+  opacity: 0.7;
+}
+
+.heroArea .leftsid .techs {
+  margin-bottom: 80px;
+}
+
+.heroArea .leftsid .techs img {
+  margin-right: 10px;
+}
+
+.heroArea .rigthsid {
+  flex: 1;
+  background-image: url("../images/you.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position-y: bottom;
+}
+
+/**** SECTION INFO ****/
+.info {
+  height: 100px;
+  border-bottom: 2px solid #eaeef1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info--text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #c2c8cb;
+  margin: 0 10px;
+}
+
+.info--circle {
+  width: 6px;
+  height: 6px;
+  background-color: #c2c8cb;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+/**** instructions ****/
+
+.instructions {
+}
+
+.inst-container {
+  margin: auto;
+  max-width: 900px;
+  padding: 70px 0;
+}
+
+.inst-items {
+  border-left: 3px solid #ecf0f3;
+  display: flex;
+}
+
+.inst--circle {
+  border-radius: 50%;
+  width: 17px;
+  height: 17px;
+  background-color: #0071b7;
+  margin-left: -9px;
+}
+
+.inst-text {
+  flex: 1;
+  margin-left: 50px;
+}
+
+.inst-text h2 {
+  font-size: 32px;
+  color: black;
+  margin: -10px 0 20px 0;
+}
+
+.inst-text p {
+  font-size: 16px;
+  line-height: 23px;
+  color: #777;
+  margin-bottom: 70px;
+}
+
+.inst-items:last-child {
+  border: 0;
+}
+
+.inst-items:last-child p {
+  margin: 0;
+}
+
+/**** SECTION CTA ****/
+
+.cta--container {
+  margin: auto;
+  max-width: 800px;
+  display: flex;
+  padding: 100px 0;
+  color: #fff;
+}
+
+.cta--left {
+  flex: 1;
+  margin-right: 30px;
+}
+
+.cta--left h2 {
+  margin: 0;
+  font-size: 40px;
+}
+
+.cta--left p {
+  font-size: 18px;
+  line-height: 25px;
+  color: #777;
+}
+
+.cta--rigth input {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: transparent;
+  height: 40px;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  width: 100%;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+.cta--rigth button {
+  height: 40px;
+  border: 0;
+  background-color: #0071b7;
+  color: #fff;
+  font-size: 14px;
+  padding: 0 20px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.cta--rigth button:hover {
+  opacity: 0.7;
+}
+
+.cta--rigth {
+  flex: 1;
+  margin-left: 30px;
+}
+
+.cta {
+  background-color: #1d2437;
+  border-bottom: 2px solid #333;
+}
+
+/**** FOOTER ****/
+
+footer {
+  background-color: #1d2437;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 40px 0;
+  max-width: 1070px;
+}
+
+.footer-right {
+  font-size: 16px;
+  color: #777;
+  text-align: right;
+  line-height: 25px;
+}
+
+.footer-right a {
+  color: #777;
+  text-decoration: none;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
+/**** RESPONSIVIDADE ****/
+
+@media (max-width: 1030px) {
+  .main .container {
+    padding: 0 20px;
+  }
+  footer .footer-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .heroArea {
+    flex-direction: column-reverse;
+  }
+  .heroArea .rigthsid {
+    height: 300px;
+    flex: none;
+    background-size: auto 100%;
+    background-position-x: center;
+  }
+}
